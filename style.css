@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    border-right: black 2px solid;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 12%;
+    height: 30rem;
+    border-radius: 10px;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-btns {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    ;
+}
+
+.blank-menu {
+    display: flex;
+    flex: 1;
+    background-color: #C1839F;
+}
+
+.weight-menu {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px 0px 0px 10px;
+    border-top: black 2px solid;
+    border-left: black 2px solid;
+    border-bottom: black 2px solid;
+    background-color: #C1839F;
+}
+
+.length-menu {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    border-top: black 2px solid;
+    border-left: black 2px solid;
+    border-bottom: black 2px solid;
+}
+
+.volume-menu {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    border-top: black 2px solid;
+    border-left: black 2px solid;
+    border-bottom: black 2px solid;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #C1839F;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.unit-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3%;
+}
+
+.input-output-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 2;
+    align-items: center;
+}
+
+.pounds-input {
+    height: 2rem;
+    width: 60%;
+}
+
+.mg-output {
+    height: 2rem;
+    width: 60%;
+    background-color: #BB4430;
+    border-radius: 10px;
+    border: black 1px solid;
+    color: white;
+}
+
+.g-output {
+    height: 2rem;
+    width: 60%;
+    background-color: #7EBDC2;
+    border-radius: 10px;
+}
+
+.kg-output {
+    height: 2rem;
+    width: 60%;
+    background-color: #F3DFA2;
+    border-radius: 10px;
+}
+
+.tonne-output {
+    height: 2rem;
+    width: 60%;
+    background-color: #EFE6DD;
+    border-radius: 10px;
+}
+
+#pounds-btn {
+    padding: 1%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#ounces-btn {
+    padding: 1%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#stones-btn {
+    padding: 1%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#tons-btn {
+    padding: 1%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#grain-btn {
+    padding: 1%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+#dram-btn {
+    padding: 1%;
+    border: black 2px solid;
+    border-radius: 10px;
+}

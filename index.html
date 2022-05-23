@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversion App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="side-menu">
+            <ul class="menu-btns">
+
+                <!--<li class="blank-menu"></li>-->
+                <li class="weight-menu">weight</li>
+                <li class="length-menu">length</li>
+                <li class="volume-menu">volume</li>
+            </ul>
+        </div>
+        <div class="main-section">
+            <div class="unit-selection">
+                <button id="pounds-btn">Pounds</button>
+                <button id="ounces-btn">Ounces</button>
+                <button id="stones-btn">Stones</button>
+                <button id="tons-btn">Tons (U.S)</button>
+                <button id="grain-btn">Grain</button>
+                <button id="dram-btn">dram</button>
+
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="pounds" class="pounds-input">
+                <div class="mg-output">
+                    <p>Miligrams</p>
+                </div>
+                <div class="g-output">
+                    <p>Grams</p>
+                </div>
+                <div class="kg-output">Kilograms</div>
+                <div class="tonne-output">Tonne (Metric)</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
