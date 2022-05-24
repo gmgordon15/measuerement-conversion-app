@@ -14,36 +14,145 @@
             <ul class="menu-btns">
 
                 <!--<li class="blank-menu"></li>-->
-                <li class="weight-menu">weight</li>
-                <li class="length-menu">length</li>
-                <li class="volume-menu">volume</li>
+                <li class="weight-menu" data-tab-target="#weight-container">weight</li>
+                <li class="length-menu" data-tab-target="#length-container">length</li>
+                <li class="volume-menu" data-tab-target="#volume-container">volume</li>
             </ul>
         </div>
-        <div class="main-section">
+        <div class="main-section active" id="weight-container" data-tab-content>
             <div class="unit-selection">
-                <button id="pounds-btn">Pounds</button>
-                <button id="ounces-btn">Ounces</button>
-                <button id="stones-btn">Stones</button>
-                <button id="tons-btn">Tons (U.S)</button>
-                <button id="grain-btn">Grain</button>
-                <button id="dram-btn">dram</button>
+                <button id="pounds-btn" data-tab-target="#weight-container">Pounds</button>
+                <button id="ounces-btn" data-tab-target="#ounces-section">Ounces</button>
+                <button id="stones-btn" data-tab-target="#stones-section">Stones</button>
+                <button id="tons-btn" data-tab-target="#USTons-section">Tons (U.S)</button>
+                <button id="grain-btn" data-tab-target="#grain-section">Grain</button>
+
 
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="pounds" class="pounds-input">
-                <div class="mg-output">
-                    <p>Miligrams</p>
+                <input type="number" placeholder="pounds" id="pounds-input">
+                <div id="mg-output">
+                    <p></p>
                 </div>
-                <div class="g-output">
-                    <p>Grams</p>
+                <div id="g-output">
+                    <p></p>
                 </div>
-                <div class="kg-output">Kilograms</div>
-                <div class="tonne-output">Tonne (Metric)</div>
+                <div id="kg-output"></div>
+                <div id="tonne-output"></div>
+            </div>
+
+
+
+            <div class="volume-section" id="volume-container" data-tab-content>
+                <h4>This will contain the volume measurements</h4>
             </div>
         </div>
-    </div>
+        <div class="ounces-container" id="ounces-section" data-tab-content>
+            <div class="unit-selection-ounces">
+                <button id="pounds-btn" data-tab-target="#weight-container"> Pounds</button>
+                <button id="ounces-btn" data-tab-target="#ounces-section">Ounces</button>
+                <button id="stones-btn" data-tab-target="#stones-section">Stones</button>
+                <button id="tons-btn" data-tab-target="#USTons-section">Tons (U.S)</button>
+                <button id="grain-btn" data-tab-target="#grain-section">Grain</button>
 
-    <script src="app.js"></script>
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="ounces" id="ounces-input">
+                <div id="mg-output-o">
+                    <p></p>
+                </div>
+                <div id="g-output-o">
+                    <p></p>
+                </div>
+                <div id="kg-output-o"></div>
+                <div id="tonne-output-o"></div>
+            </div>
+        </div>
+        <div class="stones-container" id="stones-section" data-tab-content>
+            <div class="unit-selection-stones">
+                <button id="pounds-btn" data-tab-target="#weight-container"> Pounds</button>
+                <button id="ounces-btn" data-tab-target="#ounces-section">Ounces</button>
+                <button id="stones-btn" data-tab-target="#stones-section">Stones</button>
+                <button id="tons-btn" data-tab-target="#USTons-section">Tons (U.S)</button>
+                <button id="grain-btn" data-tab-target="#grain-section">Grain</button>
+
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="stones" id="stones-input">
+                <div id="mg-output-s">
+                    <p></p>
+                </div>
+                <div id="g-output-s">
+                    <p></p>
+                </div>
+                <div id="kg-output-s"></div>
+                <div id="tonne-output-s"></div>
+            </div>
+        </div>
+        <div class="tons-container" id="USTons-section" data-tab-content>
+            <div class="unit-selection-stones">
+                <button id="pounds-btn" data-tab-target="#weight-container"> Pounds</button>
+                <button id="ounces-btn" data-tab-target="#ounces-section">Ounces</button>
+                <button id="stones-btn" data-tab-target="#stones-section">Stones</button>
+                <button id="tons-btn" data-tab-target="#USTons-section">Tons (U.S)</button>
+                <button id="grain-btn" data-tab-target="#grain-section">Grain</button>
+
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="US Tons" id="USTons-input">
+                <div id="mg-output-t">
+                    <p></p>
+                </div>
+                <div id="g-output-t">
+                    <p></p>
+                </div>
+                <div id="kg-output-t"></div>
+                <div id="tonne-output-t"></div>
+            </div>
+        </div>
+        <div class="grain-container" id="grain-section" data-tab-content>
+            <div class="unit-selection-stones">
+                <button id="pounds-btn" data-tab-target="#weight-container"> Pounds</button>
+                <button id="ounces-btn" data-tab-target="#ounces-section">Ounces</button>
+                <button id="stones-btn" data-tab-target="#stones-section">Stones</button>
+                <button id="tons-btn" data-tab-target="#USTons-section">Tons (U.S)</button>
+                <button id="grain-btn" data-tab-target="#grain-section">Grain</button>
+
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="grains" id="grains-input">
+                <div id="mg-output-g">
+                    <p></p>
+                </div>
+                <div id="g-output-g">
+                    <p></p>
+                </div>
+                <div id="kg-output-g"></div>
+                <div id="tonne-output-g"></div>
+            </div>
+        </div>
+
+        <div class="length-section" id="length-container" data-tab-content>
+            <div class="unit-selection-inches">
+                <button id="inch-btn" data-tab-target="#length-container">inch</button>
+                <button id="foot-btn" data-tab-target="#ounces-section">Foot</button>
+                <button id="miles-btn" data-tab-target="#ounces-section">Miles</button>
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="grains" id="grains-input">
+                <div id="mm-output-i">
+                    <p></p>
+                </div>
+                <div id="cm-output-i">
+                    <p></p>
+                </div>
+                <div id="m-output-i"></div>
+                <div id="km-output-i"></div>
+            </div>
+
+
+
+            <script src="app.js" defer></script>
 </body>
 
 </html>

@@ -31,7 +31,6 @@
     height: 100%;
     width: 100%;
     align-items: center;
-    ;
 }
 
 .blank-menu {
@@ -48,10 +47,9 @@
     align-items: center;
     background-color: green;
     border-radius: 10px 0px 0px 10px;
-    border-top: black 2px solid;
     border-left: black 2px solid;
     border-bottom: black 2px solid;
-    background-color: #C1839F;
+    background-color: #9EA3B0;
 }
 
 .length-menu {
@@ -78,19 +76,30 @@
     border-bottom: black 2px solid;
 }
 
-.main-section {
+.main-section,
+.ounces-container,
+.stones-container,
+.tons-container,
+.grain-container,
+.length-section {
     display: flex;
     flex-direction: column;
     width: 80%;
-    background-color: #C1839F;
+    background-color: #9EA3B0;
     border-radius: 0px 10px 10px 0px;
+    border-left: 2px black solid;
 }
 
-.unit-selection {
+.unit-selection,
+.unit-selection-ounces,
+.unit-selection-stones,
+.unit-selection-stones,
+.unit-selection-inches {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 3%;
+    padding: 3%;
+    border-bottom: 2px white solid;
 }
 
 .input-output-area {
@@ -101,39 +110,74 @@
     align-items: center;
 }
 
-.pounds-input {
-    height: 2rem;
-    width: 60%;
+#pounds-input,
+#ounces-input,
+#stones-input,
+#USTons-input,
+#grains-input {
+    height: 3rem;
+    width: 70%;
+    border-radius: 10px;
+    border: black 1px solid;
+    padding-left: 2%;
 }
 
-.mg-output {
-    height: 2rem;
+#mg-output,
+#mg-output-o,
+#mg-output-s,
+#mg-output-t,
+#mg-output-g {
+    height: 3rem;
     width: 60%;
     background-color: #BB4430;
     border-radius: 10px;
     border: black 1px solid;
     color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
 }
 
-.g-output {
-    height: 2rem;
+#g-output,
+#g-output-o,
+#g-output-s,
+#g-output-t,
+#g-output-g {
+    height: 3rem;
     width: 60%;
     background-color: #7EBDC2;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
 }
 
-.kg-output {
-    height: 2rem;
+#kg-output,
+#kg-output-o,
+#kg-output-s,
+#kg-output-t,
+#kg-output-g {
+    height: 3rem;
     width: 60%;
     background-color: #F3DFA2;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
 }
 
-.tonne-output {
-    height: 2rem;
+#tonne-output,
+#tonne-output-o,
+#tonne-output-s,
+#tonne-output-t,
+#tonne-output-g {
+    height: 3rem;
     width: 60%;
     background-color: #EFE6DD;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
 }
 
 #pounds-btn {
@@ -170,4 +214,29 @@
     padding: 1%;
     border: black 2px solid;
     border-radius: 10px;
+}
+
+#inch-btn,
+#foot-btn,
+#miles-btn {
+    padding: 1%;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: flex;
+}
+
+.ounces-area {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #9EA3B0;
+    border-radius: 0px 10px 10px 0px;
+    border-left: 2px black solid;
 }
