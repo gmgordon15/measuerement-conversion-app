@@ -85,7 +85,8 @@
 .foot-section,
 .miles-section,
 .volume-section,
-.quart-section {
+.quart-section,
+.gallons-section {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -102,7 +103,8 @@
 .unit-selection-foot,
 .unit-selection-miles,
 .unit-selection-pint,
-.unit-selection-quarts {
+.unit-selection-quarts,
+.unit-selection-gallons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -127,7 +129,8 @@
 #foot-input,
 #miles-input,
 #pint-input,
-#quart-input {
+#quart-input,
+#gallons-input {
     height: 3rem;
     width: 70%;
     border-radius: 10px;
@@ -144,7 +147,8 @@
 #mm-output-f,
 #mm-output-m,
 #ml-output-p,
-#ml-output-q {
+#ml-output-q,
+#ml-output-g {
     height: 3rem;
     width: 60%;
     background-color: #BB4430;
@@ -165,7 +169,8 @@
 #cm-output-f,
 #cm-output-m,
 #cl-output-p,
-#cl-output-q {
+#cl-output-q,
+#cl-output-g {
     height: 3rem;
     width: 60%;
     background-color: #7EBDC2;
@@ -184,7 +189,8 @@
 #m-output-f,
 #m-output-m,
 #l-output-p,
-#l-output-q {
+#l-output-q,
+#l-output-g {
     height: 3rem;
     width: 60%;
     background-color: #F3DFA2;
@@ -203,7 +209,8 @@
 #km-output-f,
 #km-output-m,
 #kl-output-p,
-#kl-output-q {
+#kl-output-q,
+#kl-output-g {
     height: 3rem;
     width: 60%;
     background-color: #EFE6DD;

@@ -228,8 +228,7 @@ function convertweightpint() {
             " centiliters";
         document.getElementById('l-output-p').innerHTML = number / 1.76 +
             " liters";
-        document.getElementById('kl-output-p').innerHTML = number / 2113
-        1.609 +
+        document.getElementById('kl-output-p').innerHTML = number / 2113 +
             " Kiloliters";
 
 
@@ -240,20 +239,19 @@ function convertweightpint() {
 convertweightpint()
 
 
-//Compute Pints to Metric outputs
+//Compute Quart to Metric outputs
 function convertweightquart() {
     let inputNumber = document.getElementById('quart-input');
     inputNumber.addEventListener('input', function(e) {
         let number = e.target.value;
 
-        document.getElementById('ml-output-q').innerHTML = number * 568 +
+        document.getElementById('ml-output-q').innerHTML = number * 946 +
             " mililiters";
-        document.getElementById('cl-output-q').innerHTML = number * 47.318 +
+        document.getElementById('cl-output-q').innerHTML = number * 94.635 +
             " centiliters";
-        document.getElementById('l-output-q').innerHTML = number / 1.76 +
+        document.getElementById('l-output-q').innerHTML = number / 1.057 +
             " liters";
-        document.getElementById('kl-output-q').innerHTML = number / 2113
-        1.609 +
+        document.getElementById('kl-output-q').innerHTML = number / 1057 +
             " Kiloliters";
 
 
@@ -262,3 +260,26 @@ function convertweightquart() {
 }
 
 convertweightquart()
+
+
+//Compute gallon to Metric outputs
+function convertweightgallon() {
+    let inputNumber = document.getElementById('gallons-input');
+    inputNumber.addEventListener('input', function(e) {
+        let number = e.target.value;
+
+        document.getElementById('ml-output-g').innerHTML = number * 3785 +
+            " mililiters";
+        document.getElementById('cl-output-g').innerHTML = number * 379 +
+            " centiliters";
+        document.getElementById('l-output-g').innerHTML = number * 3.785 +
+            " liters";
+        document.getElementById('kl-output-g').innerHTML = number / 264 +
+            " Kiloliters";
+
+
+    })
+
+}
+
+convertweightgallon()
