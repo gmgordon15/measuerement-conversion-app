@@ -43,9 +43,7 @@
 
 
 
-            <div class="volume-section" id="volume-container" data-tab-content>
-                <h4>This will contain the volume measurements</h4>
-            </div>
+
         </div>
         <div class="ounces-container" id="ounces-section" data-tab-content>
             <div class="unit-selection-ounces">
@@ -135,11 +133,11 @@
         <div class="length-section" id="length-container" data-tab-content>
             <div class="unit-selection-inches">
                 <button id="inch-btn" data-tab-target="#length-container">inch</button>
-                <button id="foot-btn" data-tab-target="#ounces-section">Foot</button>
-                <button id="miles-btn" data-tab-target="#ounces-section">Miles</button>
+                <button id="foot-btn" data-tab-target="#foot-container">Foot</button>
+                <button id="miles-btn" data-tab-target="#miles-container">Miles</button>
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="grains" id="grains-input">
+                <input type="number" placeholder="grains" id="inch-input">
                 <div id="mm-output-i">
                     <p></p>
                 </div>
@@ -149,10 +147,87 @@
                 <div id="m-output-i"></div>
                 <div id="km-output-i"></div>
             </div>
+        </div>
+        <div class="foot-section" id="foot-container" data-tab-content>
+            <div class="unit-selection-foot">
+                <button id="inch-btn" data-tab-target="#length-container">inch</button>
+                <button id="foot-btn" data-tab-target="#foot-container">Foot</button>
+                <button id="miles-btn" data-tab-target="#miles-container">Miles</button>
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="feet" id="foot-input">
+                <div id="mm-output-f">
+                    <p></p>
+                </div>
+                <div id="cm-output-f">
+                    <p></p>
+                </div>
+                <div id="m-output-f"></div>
+                <div id="km-output-f"></div>
+            </div>
+        </div>
+
+        <div class="miles-section" id="miles-container" data-tab-content>
+            <div class="unit-selection-miles">
+                <button id="inch-btn" data-tab-target="#length-container">inch</button>
+                <button id="foot-btn" data-tab-target="#foot-container">Foot</button>
+                <button id="miles-btn" data-tab-target="#miles-container">Miles</button>
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="miles" id="miles-input">
+                <div id="mm-output-m">
+                    <p></p>
+                </div>
+                <div id="cm-output-m">
+                    <p></p>
+                </div>
+                <div id="m-output-m"></div>
+                <div id="km-output-m"></div>
+            </div>
+        </div>
+
+        <div class="volume-section" id="volume-container" data-tab-content>
+
+            <div class="unit-selection-pint">
+                <button id="pint-btn" data-tab-target="#volume-container">pint</button>
+                <button id="Quart-btn" data-tab-target="#quart-container">Quart</button>
+                <button id="Gallon-btn" data-tab-target="#gallon-container">Gallon</button>
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="pint" id="pint-input">
+                <div id="ml-output-p">
+                    <p></p>
+                </div>
+                <div id="cl-output-p">
+                    <p></p>
+                </div>
+                <div id="l-output-p"></div>
+                <div id="kl-output-p"></div>
+            </div>
+        </div>
+
+        <div class="quart-section" id="quart-container" data-tab-content>
+
+            <div class="unit-selection-quarts">
+                <button id="pint-btn" data-tab-target="#volume-container">pint</button>
+                <button id="Quart-btn" data-tab-target="#quart-container">Quart</button>
+                <button id="Gallon-btn" data-tab-target="#gallon-container">Gallon</button>
+            </div>
+            <div class="input-output-area">
+                <input type="number" placeholder="quart" id="quart-input">
+                <div id="ml-output-q">
+                    <p></p>
+                </div>
+                <div id="cl-output-q">
+                    <p></p>
+                </div>
+                <div id="l-output-q"></div>
+                <div id="kl-output-q"></div>
+            </div>
+        </div>
 
 
-
-            <script src="app.js" defer></script>
+        <script src="app.js" defer></script>
 </body>
 
 </html>

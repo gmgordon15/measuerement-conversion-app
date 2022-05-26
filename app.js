@@ -144,3 +144,121 @@ function convertweightgrains() {
 }
 
 convertweightgrains()
+
+
+convertweightgrains()
+
+//Compute inches to Metric outputs
+function convertweightinch() {
+    let inputNumber = document.getElementById('inch-input');
+    inputNumber.addEventListener('input', function(e) {
+        let number = e.target.value;
+
+        document.getElementById('mm-output-i').innerHTML = number * 25.4 +
+            " milimeters";
+        document.getElementById('cm-output-i').innerHTML = number * 2.54 +
+            " centimeters";
+        document.getElementById('m-output-i').innerHTML = number / 39.37 +
+            " meters";
+        document.getElementById('km-output-i').innerHTML = number / 39370 +
+            " Kilometers";
+
+
+    })
+
+}
+
+convertweightinch()
+
+
+//Compute feet to Metric outputs
+function convertweightfoot() {
+    let inputNumber = document.getElementById('foot-input');
+    inputNumber.addEventListener('input', function(e) {
+        let number = e.target.value;
+
+        document.getElementById('mm-output-f').innerHTML = number * 305 +
+            " milimeters";
+        document.getElementById('cm-output-f').innerHTML = number * 30.48 +
+            " centimeters";
+        document.getElementById('m-output-f').innerHTML = number / 3.281 +
+            " meters";
+        document.getElementById('km-output-f').innerHTML = number / 3281 +
+            " Kilometers";
+
+
+    })
+
+}
+
+convertweightfoot()
+
+//Compute miles to Metric outputs
+function convertweightmiles() {
+    let inputNumber = document.getElementById('miles-input');
+    inputNumber.addEventListener('input', function(e) {
+        let number = e.target.value;
+
+        document.getElementById('mm-output-m').innerHTML = number * 1.609e+6 +
+            " milimeters";
+        document.getElementById('cm-output-m').innerHTML = number * 160934 +
+            " centimeters";
+        document.getElementById('m-output-m').innerHTML = number * 1609 +
+            " meters";
+        document.getElementById('km-output-m').innerHTML = number * 1.609 +
+            " Kilometers";
+
+
+    })
+
+}
+
+convertweightmiles()
+
+
+//Compute Pints to Metric outputs
+function convertweightpint() {
+    let inputNumber = document.getElementById('pint-input');
+    inputNumber.addEventListener('input', function(e) {
+        let number = e.target.value;
+
+        document.getElementById('ml-output-p').innerHTML = number * 568 +
+            " mililiters";
+        document.getElementById('cl-output-p').innerHTML = number * 47.318 +
+            " centiliters";
+        document.getElementById('l-output-p').innerHTML = number / 1.76 +
+            " liters";
+        document.getElementById('kl-output-p').innerHTML = number / 2113
+        1.609 +
+            " Kiloliters";
+
+
+    })
+
+}
+
+convertweightpint()
+
+
+//Compute Pints to Metric outputs
+function convertweightquart() {
+    let inputNumber = document.getElementById('quart-input');
+    inputNumber.addEventListener('input', function(e) {
+        let number = e.target.value;
+
+        document.getElementById('ml-output-q').innerHTML = number * 568 +
+            " mililiters";
+        document.getElementById('cl-output-q').innerHTML = number * 47.318 +
+            " centiliters";
+        document.getElementById('l-output-q').innerHTML = number / 1.76 +
+            " liters";
+        document.getElementById('kl-output-q').innerHTML = number / 2113
+        1.609 +
+            " Kiloliters";
+
+
+    })
+
+}
+
+convertweightquart()

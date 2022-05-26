@@ -81,7 +81,11 @@
 .stones-container,
 .tons-container,
 .grain-container,
-.length-section {
+.length-section,
+.foot-section,
+.miles-section,
+.volume-section,
+.quart-section {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -94,7 +98,11 @@
 .unit-selection-ounces,
 .unit-selection-stones,
 .unit-selection-stones,
-.unit-selection-inches {
+.unit-selection-inches,
+.unit-selection-foot,
+.unit-selection-miles,
+.unit-selection-pint,
+.unit-selection-quarts {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -114,7 +122,12 @@
 #ounces-input,
 #stones-input,
 #USTons-input,
-#grains-input {
+#grains-input,
+#inch-input,
+#foot-input,
+#miles-input,
+#pint-input,
+#quart-input {
     height: 3rem;
     width: 70%;
     border-radius: 10px;
@@ -126,7 +139,12 @@
 #mg-output-o,
 #mg-output-s,
 #mg-output-t,
-#mg-output-g {
+#mg-output-g,
+#mm-output-i,
+#mm-output-f,
+#mm-output-m,
+#ml-output-p,
+#ml-output-q {
     height: 3rem;
     width: 60%;
     background-color: #BB4430;
@@ -142,7 +160,12 @@
 #g-output-o,
 #g-output-s,
 #g-output-t,
-#g-output-g {
+#g-output-g,
+#cm-output-i,
+#cm-output-f,
+#cm-output-m,
+#cl-output-p,
+#cl-output-q {
     height: 3rem;
     width: 60%;
     background-color: #7EBDC2;
@@ -156,7 +179,12 @@
 #kg-output-o,
 #kg-output-s,
 #kg-output-t,
-#kg-output-g {
+#kg-output-g,
+#m-output-i,
+#m-output-f,
+#m-output-m,
+#l-output-p,
+#l-output-q {
     height: 3rem;
     width: 60%;
     background-color: #F3DFA2;
@@ -170,7 +198,12 @@
 #tonne-output-o,
 #tonne-output-s,
 #tonne-output-t,
-#tonne-output-g {
+#tonne-output-g,
+#km-output-i,
+#km-output-f,
+#km-output-m,
+#kl-output-p,
+#kl-output-q {
     height: 3rem;
     width: 60%;
     background-color: #EFE6DD;
@@ -218,7 +251,10 @@
 
 #inch-btn,
 #foot-btn,
-#miles-btn {
+#miles-btn,
+#pint-btn,
+#Quart-btn,
+#Gallon-btn {
     padding: 1%;
     border: black 2px solid;
     border-radius: 10px;
