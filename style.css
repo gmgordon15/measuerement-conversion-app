@@ -1,6 +1,16 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 10rem;
+    margin-bottom: 0;
 }
 
 .main-container {
@@ -11,7 +21,7 @@
     border-bottom: black 2px solid;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 12%;
+    margin-top: 1%;
     height: 30rem;
     border-radius: 10px;
 }
@@ -45,11 +55,22 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: green;
     border-radius: 10px 0px 0px 10px;
     border-left: black 2px solid;
     border-bottom: black 2px solid;
-    background-color: #9EA3B0;
+    border-right: black 2px solid;
+    cursor: pointer;
+}
+
+.weight-menu:hover {
+    border-right: 0;
+    background-color: #d9dbf18c;
+    cursor: pointer;
+}
+
+.weight-menu:focus {
+    background-color: #d9dbf18c;
+    border-right: 0;
 }
 
 .length-menu {
@@ -62,6 +83,19 @@
     border-top: black 2px solid;
     border-left: black 2px solid;
     border-bottom: black 2px solid;
+    border-right: black 4px solid;
+    cursor: pointer;
+}
+
+.length-menu:focus {
+    border-right: 0;
+    background-color: #d9dbf18c;
+}
+
+.length-menu:hover {
+    background-color: #d9dbf18c;
+    border-right: 0;
+    cursor: pointer;
 }
 
 .volume-menu {
@@ -74,6 +108,19 @@
     border-top: black 2px solid;
     border-left: black 2px solid;
     border-bottom: black 2px solid;
+    border-right: black 2px solid;
+    cursor: pointer;
+}
+
+.volume-menu:focus {
+    border-right: 0;
+    background-color: #d9dbf18c;
+}
+
+.volume-menu:hover {
+    background-color: #d9dbf18c;
+    border-right: 0;
+    cursor: pointer;
 }
 
 .main-section,
@@ -90,9 +137,9 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    background-color: #9EA3B0;
+    background-color: #d9dbf18c;
     border-radius: 0px 10px 10px 0px;
-    border-left: 2px black solid;
+    /*border-left: 2px black solid;*/
 }
 
 .unit-selection,
@@ -138,6 +185,11 @@
     padding-left: 2%;
 }
 
+::placeholder {
+    font-size: large;
+    font-weight: bold;
+}
+
 #mg-output,
 #mg-output-o,
 #mg-output-s,
@@ -158,6 +210,7 @@
     display: flex;
     align-items: center;
     padding-left: 2%;
+    font-weight: bold;
 }
 
 #g-output,
@@ -178,6 +231,8 @@
     display: flex;
     align-items: center;
     padding-left: 2%;
+    color: white;
+    font-weight: bold;
 }
 
 #kg-output,
@@ -198,6 +253,8 @@
     display: flex;
     align-items: center;
     padding-left: 2%;
+    color: white;
+    font-weight: bold;
 }
 
 #tonne-output,
@@ -213,47 +270,115 @@
 #kl-output-g {
     height: 3rem;
     width: 60%;
-    background-color: #EFE6DD;
+    background-color: #f3b475;
     border-radius: 10px;
     display: flex;
     align-items: center;
     padding-left: 2%;
+    color: white;
+    font-weight: bold;
 }
 
 #pounds-btn {
     padding: 1%;
-    border: black 2px solid;
-    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #F9F9ED;
+    border-radius: 5px;
+}
+
+#pounds-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
 }
 
 #ounces-btn {
     padding: 1%;
-    border: black 2px solid;
-    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #F9F9ED;
+    border-radius: 5px;
+}
+
+#ounces-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
 }
 
 #stones-btn {
     padding: 1%;
-    border: black 2px solid;
-    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #F9F9ED;
+    border-radius: 5px;
+}
+
+#stones-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
 }
 
 #tons-btn {
     padding: 1%;
-    border: black 2px solid;
-    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #F9F9ED;
+    border-radius: 5px;
+}
+
+#tons-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
 }
 
 #grain-btn {
     padding: 1%;
-    border: black 2px solid;
-    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #F9F9ED;
+    border-radius: 5px;
+}
+
+#grain-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
 }
 
 #dram-btn {
     padding: 1%;
-    border: black 2px solid;
-    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #F9F9ED;
+    border-radius: 5px;
+}
+
+#dram-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
 }
 
 #inch-btn,
@@ -263,8 +388,54 @@
 #Quart-btn,
 #Gallon-btn {
     padding: 1%;
-    border: black 2px solid;
-    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #F9F9ED;
+    border-radius: 5px;
+}
+
+#inch-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
+}
+
+#foot-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
+}
+
+#miles-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
+}
+
+#pint-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
+}
+
+#Quart-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
+}
+
+#Gallon-btn:hover {
+    box-shadow: 0px 15px 20px #8E9DCC;
+    transform: translateY(-7px);
+    background-color: #8E9DCC;
+    color: white
 }
 
 [data-tab-content] {

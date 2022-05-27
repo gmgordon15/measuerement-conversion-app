@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Conversion App</title>
+    <title>Greg's Measurement Converter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
+
+    <div class="header">
+        <h1>Greg's Measurement Converter</h1>
+    </div>
     <div class="main-container">
         <div class="side-menu">
             <ul class="menu-btns">
 
                 <!--<li class="blank-menu"></li>-->
-                <li class="weight-menu" data-tab-target="#weight-container">weight</li>
-                <li class="length-menu" data-tab-target="#length-container">length</li>
-                <li class="volume-menu" data-tab-target="#volume-container">volume</li>
+                <button class="weight-menu" data-tab-target="#weight-container">Weight</button>
+                <button class="length-menu" data-tab-target="#length-container">length</button>
+                <button class="volume-menu" data-tab-target="#volume-container">volume</button>
             </ul>
         </div>
         <div class="main-section active" id="weight-container" data-tab-content>
@@ -30,7 +35,7 @@
 
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="pounds" id="pounds-input">
+                <input type="number" placeholder="Enter Pounds" id="pounds-input">
                 <div id="mg-output">
                     <p></p>
                 </div>
@@ -55,7 +60,7 @@
 
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="ounces" id="ounces-input">
+                <input type="number" placeholder="Enter Ounces" id="ounces-input">
                 <div id="mg-output-o">
                     <p></p>
                 </div>
@@ -76,7 +81,7 @@
 
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="stones" id="stones-input">
+                <input type="number" placeholder="Enter Stones" id="stones-input">
                 <div id="mg-output-s">
                     <p></p>
                 </div>
@@ -97,7 +102,7 @@
 
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="US Tons" id="USTons-input">
+                <input type="number" placeholder="Enter US Tons" id="USTons-input">
                 <div id="mg-output-t">
                     <p></p>
                 </div>
@@ -118,7 +123,7 @@
 
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="grains" id="grains-input">
+                <input type="number" placeholder="Enter Grains" id="grains-input">
                 <div id="mg-output-g">
                     <p></p>
                 </div>
@@ -137,7 +142,7 @@
                 <button id="miles-btn" data-tab-target="#miles-container">Miles</button>
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="grains" id="inch-input">
+                <input type="number" placeholder="Enter Inches" id="inch-input">
                 <div id="mm-output-i">
                     <p></p>
                 </div>
@@ -155,7 +160,7 @@
                 <button id="miles-btn" data-tab-target="#miles-container">Miles</button>
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="feet" id="foot-input">
+                <input type="number" placeholder="Enter Feet" id="foot-input">
                 <div id="mm-output-f">
                     <p></p>
                 </div>
@@ -174,7 +179,7 @@
                 <button id="miles-btn" data-tab-target="#miles-container">Miles</button>
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="miles" id="miles-input">
+                <input type="number" placeholder="Enter Miles" id="miles-input">
                 <div id="mm-output-m">
                     <p></p>
                 </div>
@@ -194,7 +199,7 @@
                 <button id="Gallon-btn" data-tab-target="#gallons-container">Gallon</button>
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="pint" id="pint-input">
+                <input type="number" placeholder="Enter Pint" id="pint-input">
                 <div id="ml-output-p">
                     <p></p>
                 </div>
@@ -214,7 +219,7 @@
                 <button id="Gallon-btn" data-tab-target="#gallons-container">Gallon</button>
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="quart" id="quart-input">
+                <input type="number" placeholder="Enter Quart" id="quart-input">
                 <div id="ml-output-q">
                     <p></p>
                 </div>
@@ -234,7 +239,7 @@
                 <button id="Gallon-btn" data-tab-target="#gallons-container">Gallon</button>
             </div>
             <div class="input-output-area">
-                <input type="number" placeholder="quart" id="gallons-input">
+                <input type="number" placeholder="Enter Gallons" id="gallons-input">
                 <div id="ml-output-g">
                     <p></p>
                 </div>
