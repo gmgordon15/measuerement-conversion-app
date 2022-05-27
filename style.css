@@ -454,3 +454,9 @@
     border-radius: 0px 10px 10px 0px;
     border-left: 2px black solid;
 }
+
+@media all and (max-width: 480px) {
+    .main-container {
+        margin: 0;
+    }
+}
